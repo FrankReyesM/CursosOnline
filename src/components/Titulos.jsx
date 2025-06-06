@@ -1,5 +1,9 @@
-const Titulo = ({ titulo }) => {
-  return <h1 className="text-2xl font-bold mb-4">{titulo}</h1>;
-};
+import React from 'react';
 
-export default Titulo;
+const Title = ({ children, className = '' }) => (
+  <h1 className={`text-3xl font-bold text-gray-800 mb-6 ${className}`}>
+    {children}
+  </h1>
+);
+
+export default Title;
